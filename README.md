@@ -1,20 +1,26 @@
+# Python Practicals - Semester 2
 
-Python Practicals - Semester 2
-This repository contains all 9 Python practicals for Semester 2, alongside this structured README.md file. Below you'll find details, examples, and highlights of important practicals.
+This repository contains all 9 Python practicals for Semester 2, alongside this structured `README.md` file. Below you'll find details, examples, and highlights of important practicals.
 
-📋 Contents
-- Practical 1 - Tuples: Concatenation, sorting, unpacking, and cloning.
-- Practical 2 - Tuples: Size, length, duplicate removal, and flattening.
-- Practical 3 - Tuples and HTML: Immutability, retrieval from HTML file, replace/search operators, current date/time.
-- Practical 4 - Dates and Time: Time class, timedelta, strptime, strftime, and remaining days.
-- Practical 5 - Dates and Numpy: Timestamp to datestamp, compare two dates, calendar module, numpy arrays.
-- Practical 6 - Numpy Basics: Min, mean, reverse array, add rows/columns.
-- Practical 7 - Numpy Operations: Arithmetic operations, slicing, sorting, filtering.
-- Practical 8 - Pandas Basics: DataFrame, Series, arithmetic operations, concatenation.
-- Practical 9 - Pandas Operations: Filtering >90%, joining DataFrames, selecting rows, removing duplicates.
+---
+
+## 📋 Contents
+
+- **Practical 1** - Tuples: Concatenation, sorting, unpacking, and cloning.
+- **Practical 2** - Tuples: Size, length, duplicate removal, and flattening.
+- **Practical 3** - Tuples and HTML: Immutability, retrieval from HTML file, replace/search operators, current date/time.
+- **Practical 4** - Dates and Time: Time class, timedelta, strptime, strftime, and remaining days.
+- **Practical 5** - Dates and Numpy: Timestamp to datestamp, compare two dates, calendar module, numpy arrays.
+- **Practical 6** - Numpy Basics: Min, mean, reverse array, add rows/columns.
+- **Practical 7** - Numpy Operations: Arithmetic operations, slicing, sorting, filtering.
+- **Practical 8** - Pandas Basics: DataFrame, Series, arithmetic operations, concatenation.
+- **Practical 9** - Pandas Operations: Filtering >90%, joining DataFrames, selecting rows, removing duplicates.
+
+---
 
 
-Practical 1: Tuples
+**Practical 1**
+: Tuples
 - Concatenation:tuple1 = (1, 2)
 tuple2 = (3, 4)
 result = tuple1 + tuple2
@@ -33,7 +39,8 @@ print(clone)  # (1, 2, 3)
 
 
 
-Practical 2: Tuples
+**Practical 2**
+: Tuples
 - Finding Size:tup = (10, 20, 30)
 print(len(tup))  # 3
 
@@ -50,147 +57,224 @@ print(len(tup))  # 3
 
 
 
-Practical 3: Tuples and HTML
-Highlight: Important due to practical real-world applications with tuples and file handling.
+**Practical 3**: Tuples and HTML
 - Immutability:tup = (10, 20, 30)
-# tup[0] = 40 would raise an error
+#tup[0] = 40 would raise an error
 
-- Retrieve from HTML:import re
+- Retrieve from HTML:
+
+import re
 content = "<p>Sample</p>"
 text = re.sub(r'<.*?>', '', content)
 print(text)  # Sample
 
-- Replace/Search:s = "Hello world"
+
+- Replace/Search:
+
+s = "Hello world"
 print(s.replace("world", "Python"))  # Hello Python
 
-- Current Date and Time:from datetime import datetime
+
+- Current Date and Time:
+
+from datetime import datetime
 now = datetime.now()
 print(now)
 
-Here’s the continuation from Practical 4 onward, with structured descriptions and short code snippets for each of the tasks:
 
-Practical 4: Dates and Time
-- Time Class:from datetime import time
+
+**Practical 4**
+: Dates and Time
+- Time Class:
+
+from datetime import time
 t = time(14, 30, 0)
 print(t)  # 14:30:00
 
-- Timedelta:from datetime import timedelta
+
+- Timedelta:
+
+from datetime import timedelta
 delta = timedelta(days=5, hours=3)
 print(delta)  # 5 days, 3:00:00
 
-- Strptime (String to Time):from datetime import datetime
+
+- Strptime (String to Time):
+
+from datetime import datetime
 dt = datetime.strptime("2025-04-18", "%Y-%m-%d")
 print(dt)
 
-- Strftime (Time to String):now = datetime.now()
+
+- Strftime (Time to String):
+
+now = datetime.now()
 print(now.strftime("%d/%m/%Y %H:%M:%S"))
 
 
 
-Practical 5: Dates and Numpy
-Highlight: Important for working with time and arrays in Python.
-- Timestamp to Datestamp:from datetime import datetime
+**Practical 5**
+: Dates and Numpy
+- Timestamp to Datestamp:
+
+from datetime import datetime
 timestamp = 1681903620
 dt_object = datetime.fromtimestamp(timestamp)
 print(dt_object)
 
-- Compare Two Dates:from datetime import date
+
+- Compare Two Dates:
+
+from datetime import date
 d1 = date(2025, 4, 18)
 d2 = date(2025, 5, 1)
 print(d2 > d1)  # True
 
-- Calendar Module:import calendar
+
+- Calendar Module:
+
+import calendar
 print(calendar.month(2025, 4))
 
-- Numpy Array Creation:import numpy as np
+
+- Numpy Array Creation:
+
+import numpy as np
 arr = np.array([1, 2, 3, 4])
 print(arr)
 
 
 
-Practical 6: Numpy Basics
-Highlight: Crucial for understanding foundational Numpy operations.
-- Minimum Value:arr = np.array([5, 2, 9, 1])
+**Practical 6**
+: Numpy Basics
+- Minimum Value:
+
+arr = np.array([5, 2, 9, 1])
 print(np.min(arr))  # 1
 
-- Mean Value:arr = np.array([1, 2, 3, 4])
+
+- Mean Value:
+
+arr = np.array([1, 2, 3, 4])
 print(np.mean(arr))  # 2.5
 
-- Reverse Array:arr = np.array([1, 2, 3, 4])
+
+- Reverse Array:
+
+arr = np.array([1, 2, 3, 4])
 print(arr[::-1])  # [4, 3, 2, 1]
 
-- Add Rows/Columns:arr = np.array([[1, 2], [3, 4]])
+
+- Add Rows/Columns:
+
+arr = np.array([[1, 2], [3, 4]])
 new_row = np.array([5, 6])
 arr = np.vstack([arr, new_row])
 print(arr)
 
 
 
-Practical 7: Numpy Operations
-- Arithmetic Operations:arr = np.array([10, 20, 30])
+**Practical 7**
+: Numpy Operations
+- Arithmetic Operations:
+
+arr = np.array([10, 20, 30])
 print(arr + 10)  # [20, 30, 40]
 
-- Slicing:arr = np.array([1, 2, 3, 4, 5])
+
+- Slicing:
+
+arr = np.array([1, 2, 3, 4, 5])
 print(arr[1:4])  # [2, 3, 4]
 
-- Sorting:arr = np.array([5, 1, 4, 2])
+
+- Sorting:
+
+arr = np.array([5, 1, 4, 2])
 print(np.sort(arr))  # [1, 2, 4, 5]
 
-- Filtering:arr = np.array([1, 2, 3, 4, 5])
+
+- Filtering:
+
+arr = np.array([1, 2, 3, 4, 5])
 filtered = arr[arr > 3]
 print(filtered)  # [4, 5]
 
 
 
-Practical 8: Pandas Basics
-- Create a DataFrame:import pandas as pd
+**Practical 8**
+: Pandas Basics
+- Create a DataFrame:
+
+import pandas as pd
 data = {'Name': ['John', 'Alice'], 'Score': [85, 90]}
 df = pd.DataFrame(data)
 print(df)
 
-- Create a Series:series = pd.Series([1, 2, 3], index=['a', 'b', 'c'])
+
+- Create a Series:
+
+series = pd.Series([1, 2, 3], index=['a', 'b', 'c'])
 print(series)
 
-- Arithmetic Operations on Series:s1 = pd.Series([1, 2])
+
+- Arithmetic Operations on Series:
+
+s1 = pd.Series([1, 2])
 s2 = pd.Series([3, 4])
 print(s1 + s2)  # [4, 6]
 
-- Concatenation:df1 = pd.DataFrame({'A': [1], 'B': [2]})
+
+- Concatenation:
+
+df1 = pd.DataFrame({'A': [1], 'B': [2]})
 df2 = pd.DataFrame({'A': [3], 'B': [4]})
 df = pd.concat([df1, df2])
 print(df)
 
 
 
-Practical 9: Pandas Operations
-Highlight: Very important for advanced data manipulation and cleaning.
-- Filter Rows >90%:df = pd.DataFrame({'Name': ['John', 'Alice'], 'Score': [95, 88]})
+**Practical 9**: 
+Pandas Operations
+- Filter Rows >90%:
+
+df = pd.DataFrame({'Name': ['John', 'Alice'], 'Score': [95, 88]})
 filtered = df[df['Score'] > 90]
 print(filtered)
 
-- Join Two DataFrames:df1 = pd.DataFrame({'ID': [1, 2], 'Name': ['John', 'Alice']})
+
+- Join Two DataFrames:
+
+df1 = pd.DataFrame({'ID': [1, 2], 'Name': ['John', 'Alice']})
 df2 = pd.DataFrame({'ID': [1, 2], 'Score': [90, 95]})
 merged = pd.merge(df1, df2, on='ID')
 print(merged)
 
-- Select Rows Based on Column Values:df = pd.DataFrame({'Name': ['John', 'Alice'], 'Score': [95, 88]})
+
+- Select Rows Based on Column Values:
+
+df = pd.DataFrame({'Name': ['John', 'Alice'], 'Score': [95, 88]})
 selected = df[df['Name'] == 'John']
 print(selected)
 
-- Filter Duplicate Values:df = pd.DataFrame({'Name': ['John', 'Alice', 'John']})
+
+- Filter Duplicate Values:
+
+df = pd.DataFrame({'Name': ['John', 'Alice', 'John']})
 df = df.drop_duplicates()
 print(df)
 
 
+## 🚀 Important Questions
 
-🚀 Important  Questions
+### **Practical 3: Tuples and HTML**
+1. **What is the immutability of tuples? Write a code example to demonstrate.**
+   ```python
+   tup = (1, 2, 3)
+   # tup[0] = 0  # Uncommenting this line would raise TypeError
+   print(tup)
 
-
-Practical 3: Tuples and HTML
-- What is the immutability of tuples? Write a code example to demonstrate.tup = (1, 2, 3)
-# tup[0] = 0  # Uncommenting this line would raise TypeError
-print(tup)
-
+
 - How to retrieve plain text from an HTML string?import re
 html = "<p>This is a paragraph</p>"
 text = re.sub(r'<.*?>', '', html)
@@ -287,18 +371,14 @@ print(df)
 
 📜 Closing Note
 
-
 This repository is developed by Gyanankur, and all solutions are tailored for academic and learning purposes. The code and content are copyright protected, with all rights reserved. Unauthorized use, distribution, or reproduction is strictly prohibited.
 
-
 To explore these codes further, clone the repository:
-
 git clone https://github.com/Gyanankur23/Python-Practical-Sem2.git
 
 
 Happy coding! 🚀
 
-Let me know if further adjustments are needed!
-
+Let me know if you'd like further refinement or additions!
 
 
