@@ -43,7 +43,7 @@ original = (1, 2, 3)
 clone = tuple(original)
 print(clone)  # (1, 2, 3)
 
-Practical 2: Tuples
+**Practical 2: Tuples**
 
 # Finding Size
 tup = (10, 20, 30)
@@ -63,7 +63,7 @@ print(flat)  # (1, 2, 3, 4)
 tup = (10, 20, 30)
 print(len(tup))  # 3
 
-Practical 3: Tuples and HTML
+*"Practical 3: Tuples and HTML**
 
 # Immutability
 tup = (10, 20, 30)
@@ -84,7 +84,7 @@ from datetime import datetime
 now = datetime.now()
 print(now)
 
-Practical 4: Dates and Time
+**Practical 4: Dates and Time*"
 
 # Time Class
 from datetime import time
@@ -105,7 +105,7 @@ print(dt)
 now = datetime.now()
 print(now.strftime("%d/%m/%Y %H:%M:%S"))
 
-Practical 5: Dates and Numpy
+**Practical 5: Dates and Numpy**
 
 # Timestamp to Datestamp
 from datetime import datetime
@@ -128,7 +128,7 @@ import numpy as np
 arr = np.array([1, 2, 3, 4])
 print(arr)
 
-Practical 6: Numpy Basics
+**Practical 6: Numpy Basics**
 
 # Minimum Value
 arr = np.array([5, 2, 9, 1])
@@ -148,7 +148,7 @@ new_row = np.array([5, 6])
 arr = np.vstack([arr, new_row])
 print(arr)
 
-Practical 7: Numpy Operations
+**Practical 7: Numpy Operations**
 
 # Arithmetic Operations
 arr = np.array([10, 20, 30])
@@ -167,7 +167,7 @@ arr = np.array([1, 2, 3, 4, 5])
 filtered = arr[arr > 3]
 print(filtered)  # [4, 5]
 
-Practical 8: Pandas Basics
+**Practical 8: Pandas Basics**
 
 # Create a DataFrame
 import pandas as pd
@@ -190,7 +190,7 @@ df2 = pd.DataFrame({'A': [3], 'B': [4]})
 df = pd.concat([df1, df2])
 print(df)
 
-Practical 9: Pandas Operations
+**Practical 9: Pandas Operations**
 
 # Filter Rows >90%
 df = pd.DataFrame({'Name': ['John', 'Alice'], 'Score': [95, 88]})
@@ -216,9 +216,9 @@ print(df)
 
 ---
 
-🚀 Important Questions
+🚀 **Important Questions**
 
-Practical 3: Tuples and HTML
+**Practical 3:** Tuples and HTML
 
 # What is the immutability of tuples?
 tup = (1, 2, 3)
@@ -241,7 +241,7 @@ from datetime import datetime
 now = datetime.now()
 print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
-Practical 5: Dates and Numpy
+**Practical 5: Dates and Numpy**
 
 # Convert UNIX timestamp
 from datetime import datetime
@@ -264,7 +264,7 @@ import numpy as np
 arr = np.array([10, 20, 30])
 print(np.min(arr), np.mean(arr))
 
-Practical 6: Numpy Basics
+**Practical 6: Numpy Basics**
 
 # Reverse NumPy array
 arr = np.array([1, 2, 3, 4])
@@ -285,7 +285,7 @@ print(arr1 + arr2)
 arr = np.array([5, 2, 8, 1])
 print(np.sort(arr))
 
-Practical 8: Pandas Basics
+**Practical 8: Pandas Basics**
 
 # Create DataFrame
 import pandas as pd
@@ -308,7 +308,7 @@ df2 = pd.DataFrame({'A': [3], 'B': [4]})
 df = pd.concat([df1, df2])
 print(df)
 
-Practical 9: Pandas Operations
+**Practical 9: Pandas Operations**
 
 # Filter rows >90%
 df = pd.DataFrame({'Name': ['John', 'Alice'], 'Score': [95, 88]})
@@ -334,7 +334,7 @@ print(df)
 
 ---
 
-📜 Closing Note
+**📜 Closing Note**
 
 This repository is developed by Gyanankur, and all solutions are tailored for academic and learning purposes.
 
