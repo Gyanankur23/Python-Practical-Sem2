@@ -21,7 +21,7 @@ This repository contains all 9 Python practicals for Semester 2, alongside this 
 
 ## ✅ Practicals and Code Snippets
 
-### **Practical 1: Tuples**
+ **Practical 1: Tuples**
 ```python
 # Concatenation
 tuple1 = (1, 2)
