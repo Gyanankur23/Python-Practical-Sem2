@@ -1,0 +1,4 @@
+from datetime import datetime
+timestamp=1356476456
+date_for_timestamp=datetime.fromtimestamp(timestamp)
+print(date_for_timestamp)
